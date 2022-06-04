@@ -14,8 +14,8 @@ Step 1 (netfilter changes)
 
 Step 2 (modify user files & max user processes)
 ----
-    ulimit -n 999999  <- open files - highest which you can set
-    ulimit -u 999999  <- highest which you can set
+    ulimit -n 999999  <- open files - try the highest which you can set
+    ulimit -u 999999  <- user proc- try the highest which you can set
     ulimit unlimited
 
 In most cases you application should not reject/drop any incomming connections anymore which is caused by the flood. but this goes to the CPU maybe it raises the capacity up and you server lags a bit or uses more cpu than usually, if thats the case here some extra steps # USE WITH OWN CAUTION - GOOGLE THEIRE USSAGE #
