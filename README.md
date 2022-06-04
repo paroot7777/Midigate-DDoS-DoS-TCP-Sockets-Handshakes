@@ -21,6 +21,7 @@ Step 2 (modify user files & max user processes)
 In most cases you application should not reject/drop any incomming connections anymore which is caused by the flood. but this goes to the CPU maybe it raises the capacity up and you server lags a bit or uses more cpu than usually, if thats the case here some extra steps # USE WITH OWN CAUTION - GOOGLE THEIRE USSAGE #
 
 Step 3 (Iptables - TCP-Options )
+
     --tcp-option 4 = SACK Permitted can affect in some cases legit traffic by returning the first connections after reconnect it connects instantly
     --tcp-option 5 = SACK to work with option 4
     --tcp-option 5 = Timestamps important for handshake
