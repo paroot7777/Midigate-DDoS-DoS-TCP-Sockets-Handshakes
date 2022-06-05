@@ -35,6 +35,7 @@ Step 4 Extra (Iptables - DROP Completly Socket floods )
 ----  
     apt install ipset -y
     ipset create blocked hash:ip timeout 180000
+    iptables -A INPUT -p tcp -m tcp -m set --match-set blocked src -j DROP
 
 ![image](https://user-images.githubusercontent.com/106752367/172026335-0c8be783-50b9-485c-a74c-81605c66f0c0.png)
 
@@ -73,3 +74,6 @@ Step 5 Extra (Iptables - Drop Attacks to specific amplifications/applications wh
     iptables -A INPUT -p tcp -m multiport --dports 3478,5349 -j DROP
     iptables -A INPUT -p tcp -m multiport --dports 4568,42244,49658,43512 -j DROP
     iptables -A INPUT -p tcp -m multiport --dports 37368,46007,42264,36878 -j DROP
+
+You have not enought?
+ then check [fly-](https://fly-hosting.net/) out good servers with good protection & support
