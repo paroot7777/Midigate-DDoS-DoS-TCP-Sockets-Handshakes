@@ -27,9 +27,9 @@ Step 3 (Iptables - TCP-Options )
     #--tcp-option 5 = SACK to work with option 4
     #--tcp-option 5 = Timestamps important for handshake
     USSAGE:
-    iptables -A SYN -p tcp -m tcp --tcp-option 8 -j REJECT
-    iptables -A SYN -p tcp -m tcp --tcp-option 5 -j REJECT
-    iptables -A SYN -p tcp -m tcp --tcp-option 4 -j RETURN
+    iptables -A INPUT -p tcp -m tcp --tcp-option 8 -j REJECT
+    iptables -A INPUT -p tcp -m tcp --tcp-option 5 -j REJECT
+    iptables -A INPUT -p tcp -m tcp --tcp-option 4 -j RETURN
 
 Step 4 Extra (Iptables - DROP Completly Socket floods )
 ----  
