@@ -1,5 +1,5 @@
 # Midigate-DDoS-DoS-TCP-Sockets-Handshakes
-Maybe one day you will be affected by a TCP socket/handshake flood that doesn't let you connect to application anymore but that is still active, the flood doesn't generate much traffic so it is hard to filter by DDo-S protection, here I show you how to take care of that, the man is himself
+Maybe one day you will be affected by a TCP socket/handshake flood that doesn't let you connect to application anymore but that is still active, the flood doesn't generate much traffic so it is hard to filter by DDoS protection, here I show you how to take care of that, the man is himself
 
 Note: if you have questions about any entry which is made here just use google
 
@@ -18,7 +18,7 @@ Step 2 (modify user files & max user processes)
     ulimit -u 999999  <- user proc- try the highest which you can set
     ulimit unlimited
 
-In most cases you application should not reject/drop any incomming connections anymore which is caused by the flood. but this goes to the CPU maybe it raises the capacity up and you server lags a bit or uses more cpu than usually, if thats the case here some extra steps # USE WITH OWN CAUTION - GOOGLE THEIRE USSAGE #
+In most cases you application should not reject/drop any incomming connections anymore which is caused by the flood. but this goes to the CPU maybe it raises the capacity up and you server lags a bit or uses more cpu than usually, if thats the case here some extra steps # USE WITH OWN CAUTION - GOOGLE THEIR USAGE #
 
 Step 3 (Iptables - TCP-Options )
 ----   
@@ -75,5 +75,5 @@ Step 5 Extra (Iptables - Drop Attacks to specific amplifications/applications wh
     iptables -A INPUT -p tcp -m multiport --dports 4568,42244,49658,43512 -j DROP
     iptables -A INPUT -p tcp -m multiport --dports 37368,46007,42264,36878 -j DROP
 
-You have not enought?
+Still not enough?
  then check [fly-hosting](https://fly-hosting.net/) out good servers with good protection & support
