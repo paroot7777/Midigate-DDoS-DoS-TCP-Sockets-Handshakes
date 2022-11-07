@@ -76,4 +76,5 @@ Step 5 Extra (Iptables - Drop Attacks to specific amplifications/applications wh
     iptables -A INPUT -p tcp -m multiport --dports 37368,46007,42264,36878 -j DROP
 
 You have not enought?
- then check [fly-hosting](https://fly-hosting.net/) out good servers with good protection & support
+ then check [Active-VM](https://active-vm.net/) out good servers with good protection & support
+    Discord https://discord.gg/activevm [ Sponsored Server to test rules on it ]
