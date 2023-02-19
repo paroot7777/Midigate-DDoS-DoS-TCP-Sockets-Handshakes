@@ -77,4 +77,4 @@ Step 5 Extra (Iptables - Drop Attacks to specific amplifications/applications wh
 
 You have not enought?
  then check [Active-VM](https://active-vm.net/) out good servers with good protection & support
-    Discord https://discord.gg/activevm [ Sponsored Server to test rules on it ]
+    Discord https://discord.gg/9E6uX9Wmu6 [ Sponsored Server to test rules on it ]
